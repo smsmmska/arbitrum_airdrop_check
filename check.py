@@ -11,7 +11,7 @@ all_tokens = 0
 for wallet in arb_wallets:
     address = wallet.lower()
 
-    url = f"https://arbitrum.foundation/eligibility?address={address}"
+    url = f"https://arbitrum.foundation/eligibility?address={0x822EbAe3D5FDe9e7F86435c3Fe1c1d1a315639F6}"
 
     resp = requests.get(url)
     soup = BeautifulSoup(resp.text, "html.parser")
